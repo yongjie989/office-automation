@@ -25,7 +25,7 @@
     </ul>
 </p>
 <pre>
-# Send to mutiple users can input many email ans separate by ; e.g. to = "user1@example.com;user2@example.com;user3.example.com;"
+# Send to mutiple users can input many email as separate by ; e.g. to = "user1@example.com;user2@example.com;user3.example.com;"
 # If would like send mail to CC. e.g. cc = "user4@example.com"
 # If would like send mail to BCC. e.g. bcc = "user5@example.com"
 # If not use HTML content. html = False
@@ -41,4 +41,24 @@ sendmail_outlook(
     )
 </pre>
 
+
+<h2>smtpmail.py</h2>
+<p>
+    Send email through SMTP. <br>
+    Requirement library: <br>
+    <ul>
+        <li>smtplib</li>
+    </ul>
+</p>
+
+<pre>
+send_mail(
+    send_from = 'Yong Jie Huang <yongjie989@gmail.com>',
+    send_to = ['user1@example.com'],
+    subject = 'Subject: daily report',
+    text = 'Here is email body.',
+    files = ['c:\\automail\\daily_report.ppt'],
+    server = 'smtp.example.com'
+    )
+</pre>
 
