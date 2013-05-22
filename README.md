@@ -34,7 +34,7 @@
 sendmail_outlook(
     subject = "",
     to = "Yong Jie Huang <yongjie989@gmail.com>;",
-    message = "<h1>This is email body...</h1>",
+    message = "This is email body for html format...",
     attach = "c:\\automail\\file_you_want_toy_send",
     ftype = "ppt",
     html=True
